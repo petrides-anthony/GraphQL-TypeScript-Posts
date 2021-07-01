@@ -10,6 +10,7 @@ const userType = gql`
     phone: String!
     website: String!
     company: Company!
+    posts: [Post]!
   }
 `;
 

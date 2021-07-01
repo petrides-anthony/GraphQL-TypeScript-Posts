@@ -1,12 +1,10 @@
 let getPosts = require('../dataFetching/getPosts');
 
-const allPosts = getPosts();
-
 const postsResolver = {
   Query: {
     posts: (root, args, context) => {
       console.log('Posts queried');
-      return allPosts;
+      return getPosts();
     },
   }
 };

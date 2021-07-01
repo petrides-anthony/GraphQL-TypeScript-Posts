@@ -1,12 +1,10 @@
 let getUsers = require('../dataFetching/getUsers');
 
-const allUsers = getUsers();
-
 const usersResolver = {
   Query: {
     users: (root, args, context) => {
       console.log('Users queried');
-      return allUsers;
+      return getUsers();
     }
   }
 };

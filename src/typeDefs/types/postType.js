@@ -6,6 +6,7 @@ const postType = gql`
     id: ID!
     title: String!
     body: String!
+    author: User!
   }
   `;
 
