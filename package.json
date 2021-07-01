@@ -12,7 +12,7 @@
     "graphql-tag": "^2.10.1"
   },
   "scripts": {
-    "start": "nodemon index.js localhost 4000"
+    "start": "nodemon src"
   },
   "keywords": [],
   "devDependencies": {
