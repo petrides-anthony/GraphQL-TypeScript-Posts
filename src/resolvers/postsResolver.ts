@@ -2,16 +2,14 @@ let getPosts = require('../dataFetching/getPosts');
 
 const postsResolver = {
   Query: {
-    posts: (root, args, context) => {
+    posts: (root: any, args: any, context: any) => {
       console.log('Posts queried');
       return getPosts();
     },
   }
 };
 
-module.exports = {
-  postsResolver,
-};
+export { postsResolver };
 
 /*
 Try querying

@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios';
 
 const usersEndpoint = 'https://jsonplaceholder.typicode.com/users'
 

@@ -2,16 +2,14 @@ let getPostsByUserId = require('../dataFetching/getPostsByUserId');
 
 const userPostsResolver = {
   User: {
-    posts: (root, args, context) => {
+    posts: (root: any, args: any, context: any) => {
       console.log('User Posts queried');
       return getPostsByUserId(root.id);
     },
   }
 };
 
-module.exports = {
-  userPostsResolver,
-};
+export { userPostsResolver };
 
 /*
 Try querying

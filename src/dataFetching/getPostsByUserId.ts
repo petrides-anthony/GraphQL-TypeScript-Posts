@@ -1,8 +1,8 @@
-const axios = require('axios');
+import axios from 'axios';
 
 const postsEndpoint = 'https://jsonplaceholder.typicode.com/posts'
 
-async function getPostsByUserId(userId) {
+async function getPostsByUserId(userId: number) {
 
   let res = await axios.get(`${postsEndpoint}/?userId=${userId}`);
 

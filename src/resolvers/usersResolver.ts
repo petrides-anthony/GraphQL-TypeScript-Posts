@@ -2,16 +2,14 @@ let getUsers = require('../dataFetching/getUsers');
 
 const usersResolver = {
   Query: {
-    users: (root, args, context) => {
+    users: (root: any, args: any, context: any) => {
       console.log('Users queried');
       return getUsers();
     }
   }
 };
 
-module.exports = {
-  usersResolver,
-};
+export { usersResolver };
 
 /*
 Try

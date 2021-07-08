@@ -2,16 +2,14 @@ let getUserById = require('../dataFetching/getUserById');
 
 const authorResolver = {
   Post: {
-    author: (root, args, context) => {
+    author: (root: any, args: any, context: any) => {
       console.log('Author queried');
       return getUserById(root.userId);
     },
   }
 };
 
-module.exports = {
-  authorResolver,
-};
+export { authorResolver };
 
 /*
 Try querying

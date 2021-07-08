@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server");
+import { gql } from 'apollo-server';
 
 const addressType = gql`
   type Address {
@@ -10,6 +10,4 @@ const addressType = gql`
   }
 `;
 
-module.exports = {
-  addressType,
-};
+export { addressType };

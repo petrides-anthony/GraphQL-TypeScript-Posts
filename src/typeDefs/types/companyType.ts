@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server");
+import { gql } from 'apollo-server';
 
 const companyType = gql`
   type Company {
@@ -8,6 +8,4 @@ const companyType = gql`
   }
 `;
 
-module.exports = {
-  companyType,
-};
+export { companyType };
