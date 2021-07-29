@@ -11,22 +11,48 @@ The data used in this project comes from the free jsonplaceholder api available 
 
 
 ## Run Project
-- Clone
+- `yarn`
 - `yarn build`
 - `yarn start`
 
-## Sample Playground Query
+## Sample Playground Queries
+### Users Query
 ```
 query Users {
   users {
     id
     name
-    posts {
-      title
-      author {
-        name
+    username
+    email
+    address {
+      street
+      suite
+      city
+      zipcode
+      geo {
+        lat
+        lng
       }
     }
+    phone
+    website
+    company {
+      name
+      catchPhrase
+      bs
+    }
+  }
+}
+```
+
+### Posts query
+```
+query Posts {
+  posts {
+    userId
+    id
+    title
+    body
   }
 }
 ```
