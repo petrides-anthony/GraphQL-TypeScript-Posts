@@ -1,4 +1,4 @@
-let getPostsByUserId = require('../dataFetching/getPostsByUserId');
+import getPostsByUserId from '../dataFetching/getPostsByUserId';
 
 const userPostsResolver = {
   User: {

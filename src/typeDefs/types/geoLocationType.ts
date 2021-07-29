@@ -1,5 +1,10 @@
 import { gql } from 'apollo-server';
 
+interface GeoLocation {
+  lat: string;
+  lng: string;
+}
+
 const geoLocationType = gql`
   type Geolocation {
     lat: String!
@@ -7,4 +12,4 @@ const geoLocationType = gql`
   }
 `;
 
-export { geoLocationType };
+export { geoLocationType, GeoLocation };

@@ -3,4 +3,4 @@ import { postType, userType, addressType, companyType, geoLocationType } from '.
 
 const typeDefs = [query, postType, userType, addressType, companyType, geoLocationType];
 
-export { typeDefs }
+export { typeDefs };

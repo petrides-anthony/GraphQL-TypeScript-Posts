@@ -1,8 +1,10 @@
-let getUserById = require('../dataFetching/getUserById');
+import type { Post, User } from "../typeDefs/types";
+
+import getUserById from '../dataFetching/getUserById';
 
 const authorResolver = {
   Post: {
-    author: (root: any, args: any, context: any) => {
+    author: (root: Post): Promise<User> => {
       console.log('Author queried');
       return getUserById(root.userId);
     },

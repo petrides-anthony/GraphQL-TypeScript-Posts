@@ -1,13 +1,13 @@
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
+import { Post } from '../typeDefs/types';
 
 const postsEndpoint = 'https://jsonplaceholder.typicode.com/posts'
 
-async function getPosts() {
+async function getPosts(): Promise<Post[]> {
 
-  let res = await axios.get(`${postsEndpoint}`);
+  const res = await axios.get<any, AxiosResponse<Post[]>>(`${postsEndpoint}`);
 
-  let data = res.data;
-  return data;
+  return res.data;
 }
 
-module.exports = getPosts;
+export default getPosts;

@@ -1,5 +1,11 @@
 import { gql } from 'apollo-server';
 
+interface Company {
+  name: string;
+  catchPhrase: string;
+  bs: string;
+}
+
 const companyType = gql`
   type Company {
     name: String!
@@ -8,4 +14,4 @@ const companyType = gql`
   }
 `;
 
-export { companyType };
+export { companyType, Company };

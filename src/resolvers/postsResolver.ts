@@ -1,4 +1,4 @@
-let getPosts = require('../dataFetching/getPosts');
+import getPosts from '../dataFetching/getPosts';
 
 const postsResolver = {
   Query: {

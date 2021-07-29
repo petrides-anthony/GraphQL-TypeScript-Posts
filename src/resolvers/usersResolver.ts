@@ -1,4 +1,4 @@
-let getUsers = require('../dataFetching/getUsers');
+import getUsers from '../dataFetching/getUsers';
 
 const usersResolver = {
   Query: {
