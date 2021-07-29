@@ -1,8 +1,8 @@
 {
-  "name": "my-second-graphql",
+  "name": "graphql-typescript-posts.git",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/petrides-anthony/my-second-graphql.git",
+  "repository": "https://github.com/petrides-anthony/GraphQL-TypeScript-Posts.git.git",
   "author": "Anthony Petrides <anthony.petrides@thetrainline.com>",
   "license": "MIT",
   "dependencies": {
